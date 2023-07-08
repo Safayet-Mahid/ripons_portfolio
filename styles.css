@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Ysabeau Infant', sans-serif;
+    text-decoration: none;
+}
+*{
+    text-decoration: none;
+}
+
+
+#hero{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    transition: .5s all;
+}
+
+#heroimage {
+    width: 280px;
+    height: 350px;
+    transition: .5s all;
+}
+
+#heroimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s all;
+}
+
+#info{
+    border: 3.5px solid black;
+    border-radius: 1.2rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    background-color:  rgba(128, 255, 0, 0.123);
+    height: fit-content;
+    transition: .5s all;
+}
+
+#hero:hover #info {
+    transform: translateX(-54%);
+}
+#hero:hover #heroimage {
+    transform: translateX(54%);
+}
+
+#hero:hover #heroimage img {
+    opacity: .1;
+}
+
+
+#name{
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+.desc{
+    letter-spacing: .8px;
+}
+#job{
+    font-size: 14px;
+}
+.title{
+    border-bottom: 2px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    background-color: rgba(245, 245, 245, 0.694);
+    border-bottom: 3px solid;
+    width: fit-content;
+    margin: 2.5rem auto;
+    text-align: center;
+}
+
+#academics-body{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+.single-academic{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 15px;
+    height: fit-content;
+    background-color: rgba(255, 228, 196, 0.518);
+    transition: .5s;
+    
+}
+.single-academic:hover{
+    transform: translate(10px, -10px) ;
+
+}
+#second-academic{
+    margin-top: 60px;
+}
+#experience-main{
+    border-left: 2px solid;
+    padding: 20px;
+}
+.experience{
+    display: flex;
+    justify-content: space-between;
+    line-height: .5;
+    gap: 2rem;
+    margin-bottom:4rem ;
+}
+
+.last{
+    margin-bottom: 0;
+}
+
+
+#experience-number {
+    background-color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-left: -43px;
+    border: 2px solid;
+    padding: 8px;
+    border-radius: 50%;
+    height: fit-content;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 12;
+    transition: 0.5s all;
+   
+}
+
+.experience-desc{
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2px 18px;
+    margin-top: 2rem;
+    transition: 0.2s all;
+}
+
+.experience-desc:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 6px 8px 5px 2px rgba(0, 0, 0, 0.457);
+}
+
+.experience:hover #experience-number{
+    transform: scale(1.2);
+}
